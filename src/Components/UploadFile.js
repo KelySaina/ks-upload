@@ -77,8 +77,8 @@ const UploadFile = () => {
                 </label>
                 <input id="file-upload" type="file" onChange={handleFileChange} style={{ display: 'none' }} />
                 <div>
-                    <button style={{ margin: '24px', padding: '12px', fontSize: 'bolder', border: 'none', borderRadius: '5px', color: 'black', width: '150px' }} onClick={() => { setSelectedFile(null) }}>Cancel</button>
                     <button disabled={!selectedFile} style={{ margin: '24px', padding: '12px', fontSize: 'bolder', backgroundColor: selectedFile ? 'green' : 'lightgreen', cursor: selectedFile ? 'pointer' : 'default', border: 'none', borderRadius: '5px', color: 'white', width: '150px' }} onClick={handleFileUpload}>Upload File</button>
+                    <button style={{ margin: '24px', padding: '12px', fontSize: 'bolder', border: 'none', borderRadius: '5px', color: 'black', width: '150px' }} onClick={() => { setSelectedFile(null) }}>Cancel</button>
                 </div>
 
             </div>
